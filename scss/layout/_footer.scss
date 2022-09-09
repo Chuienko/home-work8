@@ -1,0 +1,144 @@
+.footer {
+  // display: flex;
+  background-color: var(--color-backgroutd);
+  padding: 60px 0;
+}
+
+.footer .container {
+  // display: flex;
+  // align-items: baseline;
+  text-align: center;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+  @include desktop {
+    flex-wrap: nowrap;
+    padding: 0 15px;
+    text-align: left;
+  }
+}
+
+.footer .button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// .footer-logo {
+//   display: block;
+//   font-family: "Raleway";
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   color: var(--color-white-text);
+// }
+// .footer-logo-accent {
+//   color: var(--accent-color);
+// }
+
+.footer__contact {
+  margin-top: 20px;
+}
+
+.footer__list {
+  // display: block;
+  font-style: normal;
+  margin-bottom: 9px;
+}
+
+// .footer__list:last-child {
+//   margin-bottom: 0;
+// }
+
+.footer__item {
+  line-height: 1.71;
+  color: var(--color-white-text);
+}
+.footer__link-mail {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__link-tell {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__blok {
+  // margin-right: 70px;
+  @include tablet {
+    margin-right: 165px;
+  }
+  @include desktop {
+    margin-right: 0;
+  }
+}
+
+/* --footer-icon-- */
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white-text);
+  margin-top: 60px;
+  margin-bottom: 20px;
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
+.mailing {
+  margin-left: auto;
+  margin-right: auto;
+  @include tablet {
+    margin: 0;
+    margin-top: 65px;
+    width: 450px;
+  }
+  @include desktop {
+    margin-top: 0;
+    width: 570px;
+  }
+}
+
+.footer__mail-icon {
+  margin-left: 10px;
+  fill: var(--color-white-text);
+}
+
+.mailing__form {
+  // display: block;
+  // text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  @include desktop {
+    display: flex;
+    margin: 0;
+  }
+}
+
+.mail__text {
+  // width: 358px;
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+  // margin-right: 12px;
+  margin-bottom: 20px;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--color-white-text);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  @include desktop {
+    margin-right: 12px;
+    width: 358px;
+  }
+}

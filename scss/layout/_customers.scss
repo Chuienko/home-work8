@@ -1,0 +1,62 @@
+.customers {
+  padding: 60px 0;
+  @include desktop {
+  padding: 94px 0;}
+
+}
+
+
+/* --costomers-icon-- */
+.customers__bt-icon {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.customers__icon {
+width: calc((100% - 30px ) / 2);
+@include tablet {
+width: calc((100% - 60px) / 3);
+}
+@include desktop {
+width: calc((100% - 150px) / 6);
+}
+}
+
+// .customers__icon:last-child {
+//   margin-right: 0;
+  
+// }
+
+.customers__link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  min-width: 130px;
+  @include mobile {
+  width: 210px;}
+  @include tablet {
+  width: 226px;}
+  @include desktop {
+  width: 170px;}
+  color: var(--color-icon-team);
+  border: 1px solid var(--cost-border);
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 0;
+ 
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+}
+
+.customers__border-icon {
+  fill: currentColor;
+}

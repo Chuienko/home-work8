@@ -1,0 +1,225 @@
+/* modal  */
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+
+  width: 450px;
+  min-height: 609px;
+  background-color: var(--color-white-text);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  @media screen and (max-width: 480px){
+    width: calc(100% - 20px);
+  }
+
+  @include desktop{
+    width: 528px;
+  min-height: 581px;
+  }
+}
+
+.modal__close {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-white-text);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  right: 8px;
+  top: 8px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__close:hover {
+  fill: var(--accent-color);
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-title-color);
+  margin-bottom: 12px;
+  @include mobile {
+  font-size: 20px;}
+}
+
+.modal__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 42px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.modal__input:hover + .modal__imput-ikon,
+.modal__input:focus + .modal__imput-ikon {
+  fill: var(--accent-color);
+}
+
+.modal__text {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  resize: none;
+  outline: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal__form {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--item-color);
+}
+
+.modal__input-wrap {
+  position: relative;
+  margin-top: 4px;
+}
+
+.modal__imput-ikon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-70%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox__taxt {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  color: var(--item-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  justify-content: center;
+  
+  @include mobile {
+    line-height: 2;
+    
+  }
+}
+.checkbox__link-text {
+  color: var(--accent-color);
+  @include mobile {
+    line-height: 2;
+    
+  }
+}
+
+.checkbox__taxt span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--first-title-color);
+  border-radius: 2px;
+  margin-right: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+.checkbox__ikon {
+  fill: transparent;
+}
+
+.checkbox__check:checked + .checkbox__taxt span {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.checkbox__check:focus + .checkbox__taxt span {
+  border-color: var(--accent-color);
+}
+
+.checkbox__check:checked + .checkbox__taxt .checkbox__ikon {
+  fill: var(--color-white-text);
+}
+
+.btn-form {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.checkbox {
+  margin-top: 20px;
+}
+
+/* галочка чекбокса через css */
+/* .checkbox__taxt::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--first-title-color);
+  border-radius: 2px;
+  margin-right: 9px;
+}
+
+.madal-check:checked + .checkbox__taxt::before {
+background-color: var(--accent-color);
+border: none;
+background-image: url(../images/Check.svg);
+background-repeat: no-repeat;
+background-position: center ;
+} */
+
+.modal__icon-close {
+  width: 10px;
+  height: 10px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
