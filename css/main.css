@@ -591,6 +591,7 @@ margin-right: 30px;
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    background-size: 1600px;
     padding: 200px 252px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero-desk-1.jpg);
   }
@@ -817,6 +818,12 @@ margin-right: 0;} */
   }
 }
 
+.portfolio_img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .portfolio__link {
   display: flex;
   flex-direction: column;
@@ -914,7 +921,7 @@ margin-right: 0;} */
   align-items: center;
   justify-content: center;
   height: 92px;
-  min-width: 130px;
+  max-width: 130px;
   color: var(--color-icon-team);
   border: 1px solid var(--cost-border);
   background-color: transparent;

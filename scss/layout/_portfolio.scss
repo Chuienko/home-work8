@@ -20,7 +20,10 @@
     width: calc((100% - 60px) / 3);
   }
 }
-
+.portfolio_img{
+display: block;
+max-width: 100%;
+height: auto;}
 // .portfolio__item:not(:last-child){
 // margin-bottom: 30px;
 

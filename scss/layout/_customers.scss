@@ -34,7 +34,7 @@ width: calc((100% - 150px) / 6);
   align-items: center;
   justify-content: center;
   height: 92px;
-  min-width: 130px;
+  max-width: 130px;
   @include mobile {
   width: 210px;}
   @include tablet {
