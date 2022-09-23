@@ -165,6 +165,8 @@ margin-right: 30px;
   top: 0;
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   > .container {
     display: flex;
     flex-direction: column;
