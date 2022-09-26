@@ -10,7 +10,6 @@
 }
 
 .modal {
-
   width: 450px;
   min-height: 609px;
   background-color: var(--color-white-text);
@@ -22,13 +21,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 480px) {
     width: calc(100% - 20px);
   }
 
-  @include desktop{
+  @include desktop {
     width: 528px;
-  min-height: 581px;
+    min-height: 581px;
   }
 }
 
@@ -59,7 +58,8 @@
   color: var(--first-title-color);
   margin-bottom: 12px;
   @include mobile {
-  font-size: 20px;}
+    font-size: 20px;
+  }
 }
 
 .modal__input {
@@ -132,7 +132,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox__taxt {
+.checkbox__text {
   display: flex;
   align-items: center;
   line-height: 1;
@@ -140,21 +140,19 @@
   font-size: 14px;
   letter-spacing: 0.03em;
   justify-content: center;
-  
+
   @include mobile {
     line-height: 2;
-    
   }
 }
 .checkbox__link-text {
   color: var(--accent-color);
   @include mobile {
     line-height: 2;
-    
   }
 }
 
-.checkbox__taxt span {
+.checkbox__text span {
   width: 16px;
   height: 15px;
   border: 2px solid var(--first-title-color);
@@ -194,6 +192,9 @@
   margin-top: 20px;
 }
 
+.checkbox__link-text {
+  margin-left: 5px;
+}
 /* галочка чекбокса через css */
 /* .checkbox__taxt::before {
   content: "";
@@ -222,4 +223,3 @@ background-position: center ;
   opacity: 0;
   pointer-events: none;
 }
-
