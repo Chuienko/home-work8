@@ -84,7 +84,7 @@
             </button>
             <ul class="mobmenu__list list">
               <li class="mobmenu__item">
-                <a href="" class="mobmenu__link link">Студія</a>
+                <a href="" class="mobmenu__link current link">Студія</a>
               </li>
               <li class="mobmenu__item">
                 <a href="./portfolio.html" class="mobmenu__link link"
@@ -250,7 +250,7 @@
       <!-- our team -->
       <section class="team">
         <div class="container">
-          <h2 class="title">Наша команда</h2>
+          <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
               <picture>
@@ -282,8 +282,10 @@
                 />
               </picture>
 
-              <h3 class="team__item-title">Ігор Дем'яненко</h3>
-              <p class="team__item-text">Product Designer</p>
+              <div class="team__subject">
+                <h3 class="team__item-title">Ігор Дем'яненко</h3>
+                <p class="team__item-text">Product Designer</p>
+              </div>
 
               <ul class="social">
                 <li class="team__bt-icon">
@@ -349,8 +351,11 @@
                   class="team__item-img"
                 />
               </picture>
-              <h3 class="team__item-title">Ольга Рєпіна</h3>
-              <p class="team__item-text">Frontend Developer</p>
+              <div class="team__subject">
+                <h3 class="team__item-title">Ольга Рєпіна</h3>
+                <p class="team__item-text">Frontend Developer</p>
+              </div>
+
               <ul class="social">
                 <li class="team__bt-icon">
                   <a href="" class="social__link">
@@ -415,8 +420,11 @@
                   class="team__item-img"
                 />
               </picture>
-              <h3 class="team__item-title">Микола Тарасов</h3>
-              <p class="team__item-text">Marketing</p>
+              <div class="team__subject">
+                <h3 class="team__item-title">Микола Тарасов</h3>
+                <p class="team__item-text">Marketing</p>
+              </div>
+
               <ul class="social">
                 <li class="team__bt-icon">
                   <a href="" class="social__link">
@@ -481,8 +489,10 @@
                   class="team__item-img"
                 />
               </picture>
-              <h3 class="team__item-title">Михайло Єрмаков</h3>
-              <p class="team__item-text">UI Designer</p>
+              <div class="team__subject">
+                <h3 class="team__item-title">Михайло Єрмаков</h3>
+                <p class="team__item-text">UI Designer</p>
+              </div>
               <ul class="social">
                 <li class="team__bt-icon">
                   <a href="" class="social__link">
@@ -576,68 +586,73 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <div class="footer__blok">
-          <a href="" class="logo color-logo2 link"
-            ><span class="logo__accent">Web</span>Studio</a
-          >
-          <address class="footer-address">
-            <ul class="footer__contact">
-              <li class="footer__list">
-                <p class="footer__item link list">
-                  м. Київ, пр-т Лесі Українки, 26
-                </p>
-              </li>
-              <li class="footer__list">
-                <a
-                  href="mailto:info@example.com"
-                  class="footer__link-mail link list"
-                  >info@example.com
+        <div class="footer__content">
+          <div class="footer__blok">
+            <a href="" class="logo color-logo2 link"
+              ><span class="logo__accent">Web</span>Studio</a
+            >
+            <address class="footer-address">
+              <ul class="footer__contact">
+                <li class="footer__list">
+                  <p class="footer__item link list">
+                    м. Київ, пр-т Лесі Українки, 26
+                  </p>
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="mailto:info@example.com"
+                    class="footer__link-mail link list"
+                    >info@example.com
+                  </a>
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="tel:+380991111111"
+                    class="footer__link-tell link list"
+                    >+38 099 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__blok-icon">
+            <h2 class="footer__title">приєднуйтесь</h2>
+            <ul class="social">
+              <li class="footer__icon">
+                <a href="" class="social__link">
+                  <svg class="social__icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-Instagram"
+                      class="bg__icon"
+                    ></use>
+                  </svg>
                 </a>
               </li>
-              <li class="footer__list">
-                <a href="tel:+380991111111" class="footer__link-tell link list"
-                  >+38 099 111 11 11
+              <li class="footer__icon">
+                <a href="" class="social__link">
+                  <svg class="social__icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a href="" class="social__link">
+                  <svg class="social__icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a href="" class="social__link">
+                  <svg class="social__icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer__blok-icon">
-          <h2 class="footer__title">приєднуйтесь</h2>
-          <ul class="social">
-            <li class="footer__icon">
-              <a href="" class="social__link">
-                <svg class="social__icon">
-                  <use
-                    href="./images/symbol-defs.svg#icon-Instagram"
-                    class="bg__icon"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon">
-              <a href="" class="social__link">
-                <svg class="social__icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon">
-              <a href="" class="social__link">
-                <svg class="social__icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon">
-              <a href="" class="social__link">
-                <svg class="social__icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="mailing">
           <p class="footer__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
           <form class="mailing__form">
@@ -669,63 +684,63 @@
 
         <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal__form">
-          <div class="modal__field">
-            <label for="user-name">Ім'я</label>
-            <div class="modal__input-wrap">
-              <input
-                type="text"
-                id="user-name"
-                name="user-name"
-                class="modal__input"
-                placeholder=""
-              />
-              <svg class="modal__imput-ikon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-person"></use>
-              </svg>
-            </div>
-          </div>
+          <ul class="modal__box">
+            <li class="modal__field">
+              <label for="user-name">Ім'я</label>
+              <div class="modal__input-wrap">
+                <input
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  class="modal__input"
+                  placeholder=""
+                />
+                <svg class="modal__imput-ikon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-person"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="modal__field">
+              <label class="modal__form" for="user-tell">Телефон</label>
+              <div class="modal__input-wrap">
+                <input
+                  type="tel"
+                  id="user-tell"
+                  name="user-tell"
+                  class="modal__input"
+                  placeholder=""
+                />
+                <svg class="modal__imput-ikon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="modal__field">
+              <label class="modal__form" for="user-mail">Пошта</label>
+              <div class="modal__input-wrap">
+                <input
+                  type="email"
+                  id="user-mail"
+                  name="user-mail"
+                  class="modal__input"
+                  placeholder=""
+                />
 
-          <div class="modal-field">
-            <label class="modal__form" for="user-tell">Телефон</label>
-            <div class="modal__input-wrap">
-              <input
-                type="tel"
-                id="user-tell"
-                name="user-tell"
-                class="modal__input"
-                placeholder=""
-              />
-              <svg class="modal__imput-ikon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="modal-field">
-            <label class="modal__form" for="user-mail">Пошта</label>
-            <div class="modal__input-wrap">
-              <input
-                type="email"
-                id="user-mail"
-                name="user-mail"
-                class="modal__input"
-                placeholder=""
-              />
-
-              <svg class="modal__imput-ikon" width="18" height="18">
-                <use href="./images/symbol-defs.svg#icon-email"></use>
-              </svg>
-            </div>
-          </div>
-
-          <div class="modal-field">
-            <label class="modal__form" for="user-text">Коментар</label>
-            <textarea
-              name="user-text"
-              id="user-text"
-              placeholder="Введіть текст"
-              class="modal__text"
-            ></textarea>
-          </div>
+                <svg class="modal__imput-ikon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#icon-email"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="modal__field">
+              <label class="modal__form" for="user-text">Коментар</label>
+              <textarea
+                name="user-text"
+                id="user-text"
+                placeholder="Введіть текст"
+                class="modal__text"
+              ></textarea>
+            </li>
+          </ul>
 
           <div class="checkbox">
             <input
@@ -741,7 +756,7 @@
                   <use href="./images/symbol-defs.svg#icon-check"></use>
                 </svg>
               </span>
-              <p class="checkbox__title">Погоджуюсь із розсилкою</p>
+              Погоджуюсь із розсилкою
               <a href="" class="checkbox__link-text"> Умови договору</a>
             </label>
           </div>

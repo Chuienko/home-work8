@@ -7,8 +7,8 @@
   }
 }
 .header .logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-size: 24px;
 }
 // .logo {
@@ -98,6 +98,7 @@ margin-right: 30px;
 }
 .header__connnect {
   margin-left: auto;
+  
 }
 .connect__mail {
   @include desktop {
@@ -110,13 +111,14 @@ margin-right: 30px;
 
 .connect__icon {
   width: 26px;
-  height: 12px;
+  height: 16px;
   padding-right: 10px;
   fill: currentColor;
 }
 
 .connect__mail-link,
 .connect__tell-link {
+  padding: 32px 0;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.14;
@@ -125,6 +127,17 @@ margin-right: 30px;
 
   display: flex;
   align-items: center;
+  
+}
+.connect__mail-link{
+  @include tabletmax {
+    padding: 20px 0 0 0;
+  }
+}
+.connect__tell-link {
+  @include tabletmax {
+    padding: 0 0 20px 0;
+  }
 }
 .connect__mail-link:hover,
 .connect__tell-link:hover,
@@ -148,6 +161,7 @@ margin-right: 30px;
     border-radius: 2px;
   }
 }
+
 .menu-open {
   margin-left: auto;
 }
@@ -173,6 +187,10 @@ margin-right: 30px;
     height: 100%;
     justify-content: space-between;
     overflow: auto;
+  }
+  @media screen and (min-width:768px) {
+    display: none;
+    
   }
 }
 
@@ -211,6 +229,8 @@ margin-right: 30px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 .contact {
   padding-bottom: 48px;
 }
@@ -241,37 +261,62 @@ margin-right: 30px;
 }
 .soc {
   display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 420px) {
+    gap: 10px 0;
+  }
+
 }
 
 .soc__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  @include mobile {
-    font-size: 18px;
-  }
+  
+  // @include mobile {
+  //   font-size: 18px;
+  // }
 
   // display: block;
   // margin-right: 20px;
   // border-right: 1px;
   // position: relative;
 }
-.soc__link:not(:last-child) {
+.soc__link {
   display: block;
-  margin-right: 20px;
-  border-right: 1px;
+  // margin-right: 20px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 0 10px;
   position: relative;
+  &:last-child{
+  border-right: none;}
 }
 
-.soc__link:not(:last-child)::after {
-  content: "";
-  width: 0px;
-  height: 20px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  color: black;
-  position: absolute;
-  right: -10px;
-  top: 0;
+// .soc__link:not(:last-child)::after {
+//   content: "";
+//   width: 0px;
+//   height: 20px;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   color: black;
+//   position: absolute;
+//   right: -10px;
+//   top: 0;
+// }
+
+/* Активна кнопка посилання */
+.current {
+  color: var(--accent-color);
+  &::after {
+    position: absolute;
+    background-color: var(--accent-color);
+    bottom: -1px;
+    right: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+  }
 }
