@@ -18,6 +18,7 @@
   @include desktop {
     flex-wrap: nowrap;
     align-items: baseline;
+    justify-content: space-between;
     padding: 0 15px;
     text-align: left;
   }
