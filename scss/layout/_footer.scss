@@ -23,7 +23,7 @@
     text-align: left;
   }
 }
-.footer__content{
+.footer__content {
   @include tablet {
     display: flex;
     // flex-wrap: wrap;
@@ -108,8 +108,9 @@
     margin-top: 0;
   }
 }
-.footer__blok-icon{
-margin-right: auto;}
+.footer__blok-icon {
+  margin-right: auto;
+}
 
 .mailing {
   margin-left: auto;
@@ -147,12 +148,12 @@ margin-right: auto;}
   height: 50px;
   padding-left: 16px;
   // margin-right: 12px;
-  
+
   resize: none;
   outline: none;
   background-color: transparent;
   color: var(--color-white-text);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-bottom: 20px;
